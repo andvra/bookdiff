@@ -8,7 +8,7 @@ First time you run the project, all authors from Project Gutenberg will be scrap
 3. Find the mean ![img](http://latex.codecogs.com/svg.latex?%5Cmu) and standard deviation ![img](http://latex.codecogs.com/svg.latex?%5Csigma) for each feature
 4. For each feature and subcorpus (all books written by an author), calculate the z-value:  
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![img](http://latex.codecogs.com/svg.latex?Z_{i}%3D\frac{C_{i}-\mu_{i}}{\sigma_{i}})
-5. For each book in the validation set, compare its z-values with each of the authors. The author with the smallest delta is the most likely author
+5. For each book in the validation set, compare its z-values with each of the subcorpus. The author of the subcorpus that gives the lowest delta is the most likely to have written the given book
 
 ## References
 

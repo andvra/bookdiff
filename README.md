@@ -10,24 +10,26 @@ First time you run the project, all authors from Project Gutenberg will be scrap
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![img](http://latex.codecogs.com/svg.latex?Z_{i}%3D\frac{C_{i}-\mu_{i}}{\sigma_{i}})
 5. For each book in the validation set, compare its z-values with each of the subcorpus. The author of the subcorpus that gives the lowest delta is the most likely to have written the given book
 
-##Setup
-Download the books in txt format, for instance using the torrent files ![here](https://www.gutenberg.org/wiki/Gutenberg:The_CD_and_DVD_Project#Downloading_Via_BitTorrent)
+## Setup
 
-Create a file config.json in the root folder with the following structure:
+1. Download the books in txt format, for instance using the torrent files [here](https://www.gutenberg.org/wiki/Gutenberg:The_CD_and_DVD_Project#Downloading_Via_BitTorrent)
+2. Create a file config.json in the root folder with the following structure:
 
+```json
 {
-"scp": {
-"ip": "<IP>",
-"port": PORT,
-"username": "USERNAME",
-"password": "PASSWORD",
-"path": "/path/to/remote/txt/folder/"
-},
-"local_book_lib": "/path/to/local/txt/folder/",
-"min_books": 10,
-"max_books": 10000,
-"number_of_authors": 5
+  "scp": {
+    "ip": "<IP>",
+    "port": PORT,
+    "username": "USERNAME",
+    "password": "PASSWORD",
+    "path": "/path/to/remote/txt/folder/"
+  },
+  "local_book_lib": "/path/to/local/txt/folder/",
+  "min_books": 10,
+  "max_books": 10000,
+  "number_of_authors": 5
 }
+```
 
 I had the Gutenberg text files downloaded on a remote computer so used SCP for that. If you prefer having the textbooks locally, skip the SCP section of the JSON and add your local path to local_book_lib instead.
 

@@ -1,0 +1,13 @@
+{
+	"scp": {
+		"ip": "<IP>",
+		"port": 123,
+		"username": "<username>",
+		"password": "<password>",
+		"path": "/path/to/txt/files/"
+	},
+	"local_book_lib": "/path/to/books/on/local/machine/",
+	"min_books": 10,
+	"max_books": 10000,
+	"number_of_authors": 5
+}
